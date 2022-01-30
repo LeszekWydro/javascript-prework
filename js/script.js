@@ -50,6 +50,6 @@ console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 }
 
-buttonRock.addEventListener('click', function(){ buttonClicked('Kanmień')});
-buttonPaper.addEventListener('click', function(){ buttonClicked('Papier')});
-buttonScissors.addEventListener('click', function(){ buttonClicked('Nożyce')});
+buttonRock.addEventListener('click', function(){ buttonClicked('kamień')});
+buttonPaper.addEventListener('click', function(){ buttonClicked('papier')});
+buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce')});
