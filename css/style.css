@@ -31,7 +31,7 @@ button {
     font-size: 40px;
     font-family: 'Arbutus', sans-serif;
     text-transform: uppercase;
-    font letter-spacing: 5px;
+    letter-spacing: 5px;
     padding: 30px 40px;
     background-color: #ffeaa7;
     border: solid #55efc4;

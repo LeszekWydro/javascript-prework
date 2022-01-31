@@ -8,6 +8,7 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
+
 let argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
 
 function getMoveName(argMoveId) {
@@ -39,7 +40,6 @@ function displayResult(argPlayerMove, argComputerMove) {
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
-
 
 playerMove = argButtonName;
 console.log('ruch gracza to: ' + playerMove);
