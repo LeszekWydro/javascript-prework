@@ -1,23 +1,27 @@
 let buttonPaper, buttonRock, buttonScissors, argButtonName, buttonTest;
 
 buttonRock = document.getElementById('button-rock');
+buttonRock.addEventListener('click', function(){ buttonClicked('kamień')});
 buttonPaper = document.getElementById('button-paper');
+buttonPaper.addEventListener('click', function(){ buttonClicked('papier')});
 buttonScissors = document.getElementById('button-scissors');
+buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce')});
+
 
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
 
-let argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+let computerMove, playerMove;
 
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
-  if (argMoveId == 1) {
+  if (argMoveId === 1) {
     return 'kamień';
-  } else if (argMoveId == 2) {
+  } else if (argMoveId === 2) {
     return 'papier';
-  } else if (argMoveId == 3) {
+  } else if (argMoveId === 3) {
     return 'nożyce';
   } else {
     printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
@@ -49,7 +53,3 @@ computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 }
-
-buttonRock.addEventListener('click', function(){ buttonClicked('kamień')});
-buttonPaper.addEventListener('click', function(){ buttonClicked('papier')});
-buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce')});
