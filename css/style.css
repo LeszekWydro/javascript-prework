@@ -1,57 +1,61 @@
-*,
-*::before,
-*::after {
+* {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
     box-sizing: border-box;
+  }
 }
 
-
 body {
-    margin: 0;
-    text-align: center;
-    background: #fff;
-    font-size: 45px;
-    line-height: 2;
+  margin: 0;
+  text-align: center;
+  background: #fff;
+  font-size: 45px;
+  line-height: 2;
 }
 
 .container {
-    margin: 100px 470px;
-    padding: 25px;
-    border-radius: 2%;
-    background-color: #e84393;
-    display: flex;
-    flex-direction: column;
-    align-content: auto;
+  margin: 100px 470px;
+  padding: 25px;
+  border-radius: 2%;
+  background-color: #e84393;
+  display: flex;
+  flex-direction: column;
+  align-content: auto;
 }
 
 #buttons {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 button {
-    font-size: 40px;
-    font-family: 'Arbutus', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    padding: 30px 40px;
-    background-color: #ffeaa7;
-    border: solid #55efc4;
-    border-radius: 68px 68px 0px 0px;
-    border-radius: 2%;
-    letter-spacing: 2px;
-    transition: .3s;
-}
+  font-size: 40px;
+  font-family: 'Arbutus', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 30px 40px;
+  background-color: #ffeaa7;
+  border: solid #55efc4;
+  border-radius: 68px 68px 0px 0px;
+  border-radius: 2%;
+  letter-spacing: 2px;
+  transition: 0.3s;
 
-button:hover {
+  &:hover {
     box-shadow: 8px 8px #55efc4;
-    transition: .3s;
+    transition: 0.3s;
     background-position: 100%;
     color: #00cec9;
+  }
 }
 
 #messages {
-    font-size: 45px;
-    font-family: 'Average Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px #55efc4;
+  font-size: 45px;
+  font-family: 'Average Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px #55efc4;
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
